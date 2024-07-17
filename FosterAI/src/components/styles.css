@@ -1,0 +1,308 @@
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background: rgb(0, 0, 0);
+  color: white;
+  font-family: "Oxygen", sans-serif;
+}
+.App{
+  min-height: 100vh;
+  display: flex;
+}
+.Sidebar {
+  flex: 3;
+  border-right: 1px solid rgb(100, 100, 100);
+  max-width:fit-content;
+  max-height: fit-content;
+}
+.logo{
+  margin-top: 5px;
+  margin-right: 1rem;
+
+}
+.logoText{
+  align-items: center;
+  width: 100px;
+}
+
+.upperside{
+  padding: 2.5rem;
+  height: 70%;
+}
+.uppersideTop{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.addbtn{
+  height: 2rem;
+  padding-right: 1rem;
+}
+.midbtn{
+  background: #dd00ff89;
+  border:none;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.midbtn:hover{
+  background-color:#dd00ff5d;
+}
+.lowerside{
+  padding:1rem;
+  margin-top: 10rem;
+}
+
+.aboutusImage{
+  margin-right: 5px;
+  padding-right: 0.01rem;
+  margin-bottom: none;
+  
+}
+.logo{
+  width: 30px;
+  height: 30px;
+}
+
+.chats {
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width:none;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: calc(100vh - 17rem);
+  text-align: justify;
+}
+
+.ChatBox {
+  flex: 9;
+}
+.Chatbox {
+  min-height: calc(100vh-14rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 10rem;
+  margin-bottom: 0;
+  max-width:100%;
+  max-height: 100%;
+}
+
+
+
+.chat {
+  
+  align-items:left;
+  max-width:fit-content;
+  margin: 1rem;
+  padding: 2rem 1.5rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  overflow-wrap:anywhere;
+}
+
+.chatImg {
+  
+  object-fit: cover;
+  width: 3.5rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+}
+.chatFooter {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inp {
+  padding: 0.29rem;
+  background: rgba(28, 30, 58, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 20rem;
+  width: 70%;
+}
+
+.inp > input {
+  width: calc(100%);
+  outline: none;
+  padding: 1.25rem;
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  overflow: hidden;
+}
+.chatFooter {
+  margin: 2rem 0;
+}
+.bot {
+  background: rgba(28, 30, 58, 1);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+}
+
+
+
+
+
+.back{
+  position: relative;
+  align-self: center;
+  z-index: -1;
+  max-width: 100%;
+  border-radius: 50%;
+  opacity: 0.5;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0.1px 0.1px;
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    flex-direction: column;
+  }
+  .dropdown {
+    display: none;
+  }
+  .dropdown.active {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+  .ChatBox {
+    flex: 0 0 100%;
+    max-width: 100%;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+}
+
+/* @media(min-aspect-ratio:16/9){
+  .back{
+    width: auto;
+    height:100%;
+  }
+} */
+.backgroundVideo{
+  position: relative;
+  align-items: center;
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+ 
+}
+.overlayText img{
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  
+  text-align: center;
+  font-size: 160px;
+  
+  font-weight: 600; */
+  position: absolute; /* Position the image absolutely within the container */
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 70%;
+  opacity:calc(0.25);
+  
+  
+  
+
+}
+
+.inp button{
+  border-width: 0;
+  border-radius: 50%;
+  background: transparent;
+  
+}
+
+.footer{
+  margin-top: 10px;
+}
+
+.txt{
+  margin-top: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing:calc(100);
+  font-weight:300;
+  font-style:normal;
+  font-size:small;
+}
+
+img{
+  vertical-align: top;
+}
+
+/* .sendbtn{
+  color: white;
+  cursor: pointer;
+} */
+
+.send{
+  cursor: pointer;
+}
+.listItems{
+  display: flex;
+  width:100%;
+}
+.aboutus{
+  cursor: pointer;
+  border:none;
+  flex:1;
+  font-size: 1.5rem;
+  width:fit-content;
+  
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 2rem;
+  border-radius: 0rem;
+  background: transparent;
+  align-self:flex-start;
+}
+
+/* .aboutus Link{
+  margin-bottom: 10px;
+  color: white;
+} */
+.logout{
+  color: white;
+  background-color:#dd00ff89;
+  flex:1;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.logout:hover{
+  background-color:#dd00ff5d;
+}
+
+
+

@@ -1,0 +1,69 @@
+.sign-in-login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-signin{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  color:#fcfcfc
+
+}
+
+.modal-content {
+  background-color: rgb(20, 20, 20);
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 
+  0 0 40px 15px rgba(69, 69, 69, 0.5); 
+}
+
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.sign-in-login-modal input[type="email"],
+input[type="password"] {
+  width: 93%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.sign-in-login-modal button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-btn {
+  margin-top: 10px;
+  background-color: #dc3545;
+}
+
+.toggle-form button {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.toggle-form{
+  color: #fcfcfc;
+}
+.error{
+  color:red;
+}
